@@ -1,0 +1,96 @@
+*{
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+body{
+    margin-top: 10px;
+    background-color: #d9dce1;
+}
+.taskInput{
+    display: flex;
+    justify-content: center;
+}
+#taskText{
+    width: 55%;
+    height: 30px;
+    border-radius: 8px;
+    border: none;
+    padding-left: 15px;
+    font-size: 1.2rem;
+    background-color: #f2f2f2;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+}
+#taskText:focus{
+    outline: none;
+    background-color: #fff;
+}
+#addTaskBtn{
+    margin-left: 5px;
+    border-radius: 8px;
+    border: none;
+    width: 80px;
+    height: 30px;
+    background-color: #3c74ba;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 12px;
+}
+#listItem{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#listItem p{
+    margin-top: 15px;
+    font-size: 1.8rem;
+}
+.xButton{
+    background-image: url("./src/trash.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-color: #ed0000;
+    margin-bottom: 10px;
+    margin-left: 100%;
+    border: none;
+    border-radius: 10px;
+    height: 30px;
+    width: 80px;
+    position: relative;
+    left: -80px;
+    top: -25px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 12px;
+}
+.vButton{
+    background-image: url("./src/able.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-color: #3c74ba;
+    margin-left: 100%;
+    border: none;
+    border-radius: 10px;
+    height: 30px;
+    width: 80px;
+    position: relative;
+    left: -80px;
+    top: -25px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 12px;
+}
+.incomplete{
+    background-color: #ff6858;
+    min-height: 70px;
+    margin-top: 15px;
+    width: 60%;
+    padding: 0% 2% 0% 4%;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.260) 0px 3px 12px;
+}
+.complete{
+    background-color: #cbffa1;
+    min-height: 70px;
+    margin-top: 15px;
+    width: 60%;
+    padding: 0% 2% 0% 4%;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.260) 0px 3px 12px;
+}
